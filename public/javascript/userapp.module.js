@@ -1,6 +1,6 @@
 angular.module('app', ['ngRoute', 'registerControllerModule'])
 
-.config(['$routeProvider', function($routeProvider){
+.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
     $routeProvider
     .when("/", {
         templateUrl : "templates/login.html"
@@ -10,6 +10,10 @@ angular.module('app', ['ngRoute', 'registerControllerModule'])
         controller : "registercontroller"
     })
     .otherwise("/");
+    // $locationProvider.html5Mode({
+    //     enabled : true,
+    //     requireBase : false
+    // });
 }]);
 
 

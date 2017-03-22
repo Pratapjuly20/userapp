@@ -12,13 +12,7 @@ module.exports = {
                 password : newuser.password,
                 flag : 'Y'
             }, function(err, result){
-                if(err){
-                    console.log(err);
-                    throw err;
-                } else {
-                    console.log("callback after creating user" + result);
-                    return callback(null , result);
-                }
+                console.log("data saved");
             }
         });
     }

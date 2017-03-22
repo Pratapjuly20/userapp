@@ -1,12 +1,54 @@
-<div>
-    <form name="registerform">
-        Username : <input type="text" ng-model="registerdata.uname" />
-        First Name : <input type="text" ng-model="registerdata.fname" />
-        Last Name : <input type="text" ng-model="registerdata.lname" />
-        Age : <input type="text" ng-model="registerdata.age" />
-        Gender : <input type="text" ng-model="registerdata.gender" />
-        Password : <input type="text" ng-model="registerdata.password" />
-        Confirm Password : <input type="text" ng-model="registerdata.confpassword" />
-        <button type="submit" ng-click="register()">Register</button>
+<div class = "container" id="registerform">
+    <form name="registerform" class="form-horizontal" >
+        <div class="form-group">
+            <label for="userName" class="col-md-3 control-label">Username :</label>
+            <div class="col-md-6">
+                <input type="text" ng-model="registerdata.uname" id="userName" class="form-control"/>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="form-group">
+            <label for="fname" class="col-md-3 control-label">First Name :</label>
+            <div class="col-md-6">
+                <input type="text" ng-model="registerdata.fname" id="fname" class="form-control"/>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="form-group">
+            <label for="lname" class="col-md-3 control-label">Last Name :</label>
+            <div class="col-md-6">
+                <input type="text" ng-model="registerdata.lname" id="lname" class="form-control"/>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="form-group">
+            <label for="age" class="col-md-3 control-label">Age :</label>
+            <div class="col-md-6">
+                <input type="text" ng-model="registerdata.age" id="age" class="form-control"/>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="form-group">
+            <label for="gender" class="col-md-3 control-label">Gender :</label>
+            <div class="col-md-6">
+                <input type="text" ng-model="registerdata.gender" id="gender" class="form-control"/>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="form-group">
+            <label for="pass" class="col-md-3 control-label">Password :</label>
+            <div class="col-md-6">
+                <input type="text" ng-model="registerdata.password" id="pass" class="form-control"/>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="form-group">
+            <label for="confpass" class="col-md-3 control-label">Confirm Password :</label>
+            <div class="col-md-6">
+                <input type="text" ng-model="registerdata.confpassword" id="confpass" class="form-control"/>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <button  class = "btn btn-primary" type="submit" ng-click="register()">Register</button>
     </form>
 </div>
